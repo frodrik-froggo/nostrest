@@ -1,0 +1,21 @@
+{
+  "name": "nostr2rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nostrest": "node nostrest.js",
+    "restnostr": "node restnostr.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@noble/secp256k1": "^1.7.0",
+    "better-sqlite3": "^8.0.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "nostr": "^0.2.7",
+    "nostr-tools": "^0.24.1"
+  }
+}
