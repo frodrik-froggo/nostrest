@@ -1,26 +1,37 @@
 {
   "nostrest": {
-    "relays": [
-      "wss://relay.damus.io",
-      "wss://nostr-pub.wellorder.net",
-      "wss://relay.nostr.info"
-    ],
-    "privateKeyFile": "./privateKey.txt",
-    "dbFile": "./nostrest.sqlite3",
-    "updateInterval": 1000,
-    "restUrl": "http://127.0.0.1/",
+    "nostrClient": {
+      "relays": [
+        "wss://relay.damus.io",
+        "wss://nostr-pub.wellorder.net",
+        "wss://relay.nostr.info"
+      ],
+      "privateKeyFile": "./key_nostrest.txt",
+      "dbFile": "./state_nostrest.sqlite3",
+      "updateInterval": 10,
+      "maxTries": 30,
+      "retryAfterSeconds": 60
+    },
+    "restUrl": "http://127.0.0.1:3338/",
     "useTor": false,
-    "restOnion": "nrhmlco5txt32lmsragb3cgp65xfw2u46jzt72hjaklplsjt35xznaqd.onion",
-    "maxTries": 30,
-    "retryAfterSeconds": 60
+    "restOnion": "nrhmlco5txt32lmsragb3cgp65xfw2u46jzt72hjaklplsjt35xznaqd.onion"
   },
   "restnostr": {
-    "relays": [
-      "wss://relay.damus.io",
-      "wss://nostr-pub.wellorder.net",
-      "wss://relay.nostr.info"
-    ],
+    "nostrClient": {
+      "relays": [
+        "wss://relay.damus.io",
+        "wss://nostr-pub.wellorder.net",
+        "wss://relay.nostr.info"
+      ],
+      "privateKeyFile": "./key_restnostr.txt",
+      "dbFile": "./state_restnostr.sqlite3",
+      "updateInterval": 1000,
+      "maxTries": 30,
+      "retryAfterSeconds": 60
+    },
+    "mintNostrPubkey2": "0df44616391f70e279dc071decce13ba3a4dd871e29587339ae970c0beb4e74e",
     "mintNostrPubkey": "8e70c70ceff84b8ff2b95bc35f12f766c24bca06256beb07846b736a0fa6cb99",
+    "requestTimeoutSeconds": 30,
     "host": "localhost",
     "port": 3888
   }
