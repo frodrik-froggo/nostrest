@@ -1,0 +1,30 @@
+@startuml
+skinparam actorStyle Hollow
+top to bottom direction
+
+actor "User 1" as u1
+actor "User 2" as u2
+
+usecase "Cashu Wallet 1" as c1
+usecase "Cashu Wallet 2" as c2
+
+package Nostr {
+  usecase "Relay 1" as R1
+  usecase "Relay 2" as R2
+  usecase "Relay 3" as R3
+  usecase "Relay 4" as R4
+}
+
+u1 --> c1
+c2 --> u2
+c1 --> R1
+c1 --> R2
+c1 --> R3
+c1 --> R4
+
+R1 --> c2
+R2 --> c2
+R3 --> c2
+R4 --> c2
+
+@enduml
