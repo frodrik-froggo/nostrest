@@ -12,9 +12,10 @@
       "maxTries": 30,
       "retryAfterSeconds": 60
     },
+    "useTor": true,
+    "socksProxy": "socks5h://127.0.0.1:9050",
     "restUrl": "http://127.0.0.1:3338/",
-    "useTor": false,
-    "restOnion": "nrhmlco5txt32lmsragb3cgp65xfw2u46jzt72hjaklplsjt35xznaqd.onion"
+    "restOnion": "http://nrhmlco5txt32lmsragb3cgp65xfw2u46jzt72hjaklplsjt35xznaqd.onion"
   },
   "restnostr": {
     "nostrClient": {
