@@ -14,7 +14,7 @@ always: only do things if list of relays is big enough (4-8)
 send IMOVED(oldrelay,newrelay) to tell the entry of the bridge that it closed the connection to one relay and opened it to another relay. (Ephemeral)
 
 Assumption: If we have enough relays connected which are also connected to a mint, the requests will
-most likely arrive at the other side and the response will be seen by us. (see Two General's Problem)
+most likely arrive at the other side and the response will be seen by us. (see Two Generals Problem)
 
 # Basic Protocol
 ## Data Level
