@@ -7,3 +7,4 @@
 plantuml -v -tpng -o .. overview_mint.puml
 plantuml -v -tpng -o .. overview_mint_ideal.puml
 plantuml -v -tpng -o .. overview_p2p_ideal.puml
+plantuml -v -tpng -o .. control_flow.puml

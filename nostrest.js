@@ -4,12 +4,12 @@
 // https://www.npmjs.com/package/tor-request
 
 const Nostrest = require('./lib/nostrest.js');
-const {readConfigFile} = require("./lib/config");
+const {readJsonFile} = require('./lib/config');
 
 ( async() => {
 
   try {
-    const config = await readConfigFile( './config.json',['relays'] );
+    const config = await readJsonFile( './config.json' );
     const nostrest = new Nostrest( config.nostrest );
     await nostrest.start();
   } catch( err ) {

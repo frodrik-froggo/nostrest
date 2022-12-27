@@ -1,10 +1,10 @@
 const Restnostr = require('./lib/restnostr.js');
-const {readConfigFile} = require("./lib/config");
+const {readJsonFile} = require('./lib/config');
 
 ( async() => {
 
   try {
-    const config = await readConfigFile( './config.json' );
+    const config = await readJsonFile( './config.json' );
     const restnostr = new Restnostr( config.restnostr );
     await restnostr.start();
   } catch( err ) {

@@ -1,0 +1,9 @@
+@startuml
+Entry -> Exit: HENLO
+Entry <-- Exit: ITSME (relays)
+
+Entry -> Exit: REST request over nostr (method, endpoint, params)
+Entry <-- Exit: Response from REST service
+Entry -> Exit: GOTIT (eventId)
+
+@enduml

@@ -2,7 +2,7 @@
 
 ## As entry of bridge: ##
 0) Get list of realays.
-1) Select n random relays.
+1) Select n random relays, which SHOULD include the default cashu relay for faster discovery
 2) Send "HENLO" to pubkey of mint. (Ephemeral or request deletion)
 3) If you receive "ITSME" from pubkey of mint on a relay, it will contain a list of relays. Replace the initial list with this list (Ephemeral or request deletion)
 4) If you don't receive a ITSME, go to 1) chosing different set of relays.
