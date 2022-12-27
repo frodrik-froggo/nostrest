@@ -1,9 +1,22 @@
 @startuml
+participant "REST Client"
+box "Nostr" #LightBlue
+participant Entry
+participant Exit
+end box
+participant "REST Service"
+
+== Initialization ==
 Entry -> Exit: HENLO
 Entry <-- Exit: ITSME (relays)
 
+== Repetition ==
+"REST Client" -> Entry: REST request
 Entry -> Exit: REST request over nostr (method, endpoint, params)
+Exit -> "REST Service": REST request
+Exit <-- "REST Service": REST response
 Entry <-- Exit: Response from REST service
+"REST Client" <-- Entry: REST response
 Entry -> Exit: GOTIT (eventId)
 
 @enduml
