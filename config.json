@@ -20,7 +20,7 @@
     "nostrClient": {
       "relayUrlsFile": "./relays.json",
       "privateKeyFile": "./key_restnostr.txt",
-      "dbFile": "./state_restnostr.sqlite3",
+      "dbFile": ":memory:",
       "updateInterval": 10,
       "maxTries": 30,
       "retryAfterSeconds": 60,
