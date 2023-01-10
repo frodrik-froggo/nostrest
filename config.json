@@ -8,8 +8,8 @@
       "maxTries": 30,
       "retryAfterSeconds": 60,
       "defaultRelay": "wss://nostr-pub.wellorder.net",
-      "useEphemeralEvents": false,
-      "waitForOk": true
+      "useEphemeralEvents": true,
+      "waitForOk": false
     },
     "useTor": false,
     "socksProxy": "socks5h://127.0.0.1:9050",
@@ -25,8 +25,9 @@
       "maxTries": 30,
       "retryAfterSeconds": 60,
       "defaultRelay": "wss://nostr-pub.wellorder.net",
-      "useEphemeralEvents": false,
-      "waitForOk": true
+      "useEphemeralEvents": true,
+      "waitForOk": false,
+      "minRelays": 1
     },
     "mintNostrPubkey2": "0df44616391f70e279dc071decce13ba3a4dd871e29587339ae970c0beb4e74e",
     "mintNostrPubkey": "8e70c70ceff84b8ff2b95bc35f12f766c24bca06256beb07846b736a0fa6cb99",
