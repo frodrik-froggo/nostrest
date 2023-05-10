@@ -6,11 +6,11 @@ participant Exit
 end box
 participant "REST Service"
 
-== Initialization ==
+== Initialization (using throwaway keys) ==
 Entry -> Exit: HENLO
 Entry <-- Exit: ITSME (relays)
 
-== Repetition ==
+== Repetition (using throwaway keys) ==
 "REST Client" -> Entry: REST request
 Entry -> Exit: REST request over nostr (method, endpoint, params)
 Exit -> "REST Service": REST request
